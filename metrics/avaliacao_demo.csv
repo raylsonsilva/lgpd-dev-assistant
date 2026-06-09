@@ -1,0 +1,5 @@
+pergunta,rota,modelo,cache_hit,latencia_ms,qtd_fontes,qtd_tools,custo_estimado_usd
+Posso armazenar CPF do cliente para emissão de nota fiscal?,complex,gpt-4o,False,1.02,4,1,0.0012
+O que devo fazer se houve vazamento de dados pessoais? Cite o artigo 48.,complex,gpt-4o,False,0.7,4,2,0.0012
+Quais cuidados devo ter ao usar logs com e-mail e IP para detectar fraude?,simple,gpt-4o-mini,False,1.7,4,1,0.00015
+CACHE DEMO,n/a,n/a,True,0.01,,,

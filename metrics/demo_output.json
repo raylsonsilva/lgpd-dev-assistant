@@ -1,0 +1,203 @@
+{
+  "results": [
+    {
+      "question": "Posso armazenar CPF do cliente para emissão de nota fiscal?",
+      "answer": "Resposta gerada com base no corpus recuperado:\nO armazenamento de CPF pode ser permitido quando houver finalidade clara e base legal adequada, como obrigação legal ou execução de contrato, mas deve respeitar necessidade, retenção e segurança.\n\nTools utilizadas:\n- Avaliação preliminar de risco: médio. Ações: Confirmar finalidade e base legal antes da coleta., Coletar somente o mínimo necessário., Definir retenção e controles de acesso..\n\nFontes: trechos recuperados do corpus LGPD para desenvolvedores. Esta resposta não substitui validação jurídica/DPO.",
+      "route": {
+        "complexity": "complex",
+        "model": "gpt-4o",
+        "reason": "Pergunta contextual/decisória: usa rota premium após retrieval e tools.",
+        "estimated_cost_usd": 0.0012
+      },
+      "cache": {
+        "hit": false,
+        "type": "miss"
+      },
+      "latency_ms": 1.02,
+      "sources": [
+        {
+          "source": "lgpd_corpus_dev.md",
+          "page": "04",
+          "score": 0.3277,
+          "chunk_id": "lgpd_corpus_dev.md::chunk_0008",
+          "preview": "to, pode haver legítimo interesse, desde que exista avaliação de proporcionalidade e respeito aos direitos do titular.  Exemplo: armazenar CPF para emissão de nota fiscal pode estar relacionado a obrigação legal. Guardar e-mail para login pode estar ligado à e..."
+        },
+        {
+          "source": "lgpd_corpus_dev.md",
+          "page": "05",
+          "score": 0.0755,
+          "chunk_id": "lgpd_corpus_dev.md::chunk_0010",
+          "preview": "maior.  Exemplo: armazenar laudos médicos em um sistema de RH é muito mais sensível do que armazenar e-mail corporativo. O acesso deve ser limitado, justificado e auditável...."
+        },
+        {
+          "source": "lgpd_corpus_dev.md",
+          "page": "03",
+          "score": 0.0491,
+          "chunk_id": "lgpd_corpus_dev.md::chunk_0006",
+          "preview": "medidas técnicas e administrativas para proteger os dados contra acessos indevidos, vazamentos e usos não autorizados.  Exemplo: se o objetivo é autenticar um usuário, talvez e-mail e senha sejam suficientes; pedir CPF, data de nascimento e endereço completo s..."
+        },
+        {
+          "source": "lgpd_corpus_dev.md",
+          "page": "05",
+          "score": 0.0487,
+          "chunk_id": "lgpd_corpus_dev.md::chunk_0009",
+          "preview": "## Página 05 — Artigo 11: dados pessoais sensíveis  Dados pessoais sensíveis exigem proteção reforçada. O tratamento pode ocorrer em hipóteses específicas, como consentimento destacado, cumprimento de obrigação legal, políticas públicas, estudos por órgão de p..."
+        }
+      ],
+      "tool_calls": [
+        {
+          "name": "assess_lgpd_risk",
+          "arguments": {
+            "data_type": "Posso armazenar CPF do cliente para emissão de nota fiscal?",
+            "purpose": "Posso armazenar CPF do cliente para emissão de nota fiscal?",
+            "is_sensitive": false,
+            "has_consent": false
+          }
+        }
+      ]
+    },
+    {
+      "question": "O que devo fazer se houve vazamento de dados pessoais? Cite o artigo 48.",
+      "answer": "Resposta gerada com base no corpus recuperado:\nEm caso de incidente ou vazamento, o caminho recomendado é conter o acesso, preservar evidências, identificar quais dados e titulares foram afetados, acionar o DPO/jurídico e avaliar comunicação à ANPD e aos titulares.\n\nTools utilizadas:\n- Art. 48 — trata de comunicação de incidentes de segurança que possam gerar risco ou dano relevante aos titulares.\n- Avaliação preliminar de risco: baixo. Ações: Confirmar se o dado é realmente anônimo., Documentar a finalidade do tratamento..\n\nFontes: trechos recuperados do corpus LGPD para desenvolvedores. Esta resposta não substitui validação jurídica/DPO.",
+      "route": {
+        "complexity": "complex",
+        "model": "gpt-4o",
+        "reason": "Pergunta contextual/decisória: usa rota premium após retrieval e tools.",
+        "estimated_cost_usd": 0.0012
+      },
+      "cache": {
+        "hit": false,
+        "type": "miss"
+      },
+      "latency_ms": 0.7,
+      "sources": [
+        {
+          "source": "lgpd_corpus_dev.md",
+          "page": "09",
+          "score": 0.2303,
+          "chunk_id": "lgpd_corpus_dev.md::chunk_0015",
+          "preview": "## Página 09 — Artigo 48: incidentes de segurança  O Art. 48 trata da comunicação de incidentes de segurança que possam acarretar risco ou dano relevante aos titulares. Quando há vazamento, acesso indevido ou exposição de dados pessoais, a organização deve ava..."
+        },
+        {
+          "source": "lgpd_corpus_dev.md",
+          "page": "07",
+          "score": 0.1344,
+          "chunk_id": "lgpd_corpus_dev.md::chunk_0013",
+          "preview": "## Página 07 — Artigo 37: registro das operações de tratamento  O Art. 37 trata da manutenção de registro das operações de tratamento de dados pessoais. Esse registro ajuda a demonstrar governança, finalidade, base legal, categorias de dados, sistemas envolvid..."
+        },
+        {
+          "source": "lgpd_corpus_dev.md",
+          "page": "05",
+          "score": 0.1261,
+          "chunk_id": "lgpd_corpus_dev.md::chunk_0009",
+          "preview": "## Página 05 — Artigo 11: dados pessoais sensíveis  Dados pessoais sensíveis exigem proteção reforçada. O tratamento pode ocorrer em hipóteses específicas, como consentimento destacado, cumprimento de obrigação legal, políticas públicas, estudos por órgão de p..."
+        },
+        {
+          "source": "lgpd_corpus_dev.md",
+          "page": "08",
+          "score": 0.1041,
+          "chunk_id": "lgpd_corpus_dev.md::chunk_0014",
+          "preview": "## Página 08 — Artigo 46: segurança da informação  O Art. 46 estabelece que agentes de tratamento devem adotar medidas de segurança, técnicas e administrativas aptas a proteger os dados pessoais contra acessos não autorizados e situações acidentais ou ilícitas..."
+        }
+      ],
+      "tool_calls": [
+        {
+          "name": "cite_article",
+          "arguments": {
+            "article_number": 48
+          }
+        },
+        {
+          "name": "assess_lgpd_risk",
+          "arguments": {
+            "data_type": "O que devo fazer se houve vazamento de dados pessoais? Cite o artigo 48.",
+            "purpose": "O que devo fazer se houve vazamento de dados pessoais? Cite o artigo 48.",
+            "is_sensitive": false,
+            "has_consent": false
+          }
+        }
+      ]
+    },
+    {
+      "question": "Quais cuidados devo ter ao usar logs com e-mail e IP para detectar fraude?",
+      "answer": "Resposta gerada com base no corpus recuperado:\nA decisão deve considerar finalidade, base legal, minimização, transparência, segurança e registro das operações de tratamento.\n\nTools utilizadas:\n- Avaliação preliminar de risco: médio. Ações: Confirmar finalidade e base legal antes da coleta., Coletar somente o mínimo necessário., Definir retenção e controles de acesso..\n\nFontes: trechos recuperados do corpus LGPD para desenvolvedores. Esta resposta não substitui validação jurídica/DPO.",
+      "route": {
+        "complexity": "simple",
+        "model": "gpt-4o-mini",
+        "reason": "Pergunta curta/objetiva: rota cheap-first para reduzir custo.",
+        "estimated_cost_usd": 0.00015
+      },
+      "cache": {
+        "hit": false,
+        "type": "miss"
+      },
+      "latency_ms": 1.7,
+      "sources": [
+        {
+          "source": "lgpd_corpus_dev.md",
+          "page": "12",
+          "score": 0.105,
+          "chunk_id": "lgpd_corpus_dev.md::chunk_0019",
+          "preview": "## Página 12 — Boas práticas para times de desenvolvimento  Antes de criar uma nova funcionalidade, o time deve perguntar: qual dado pessoal será coletado, por quê, por quanto tempo, quem acessa, com quem será compartilhado, qual a base legal, como o titular s..."
+        },
+        {
+          "source": "lgpd_corpus_dev.md",
+          "page": "06",
+          "score": 0.0827,
+          "chunk_id": "lgpd_corpus_dev.md::chunk_0012",
+          "preview": "apear onde os dados estão: bancos relacionais, logs, data lakes, filas, backups, ferramentas de suporte e integrações.  Exemplo: se um cliente pede exclusão da conta, o sistema precisa saber quais dados podem ser eliminados, quais devem ser mantidos por obriga..."
+        },
+        {
+          "source": "lgpd_corpus_dev.md",
+          "page": "02",
+          "score": 0.0773,
+          "chunk_id": "lgpd_corpus_dev.md::chunk_0004",
+          "preview": "a definir responsabilidades entre empresa, fornecedores, gateways, CRMs, ferramentas de suporte e provedores de cloud.  Implicação prática: antes de modelar tabelas, filas, eventos ou logs, é necessário classificar os dados. CPF, e-mail, telefone, endereço IP ..."
+        },
+        {
+          "source": "lgpd_corpus_dev.md",
+          "page": "04",
+          "score": 0.0683,
+          "chunk_id": "lgpd_corpus_dev.md::chunk_0008",
+          "preview": "to, pode haver legítimo interesse, desde que exista avaliação de proporcionalidade e respeito aos direitos do titular.  Exemplo: armazenar CPF para emissão de nota fiscal pode estar relacionado a obrigação legal. Guardar e-mail para login pode estar ligado à e..."
+        }
+      ],
+      "tool_calls": [
+        {
+          "name": "assess_lgpd_risk",
+          "arguments": {
+            "data_type": "Quais cuidados devo ter ao usar logs com e-mail e IP para detectar fraude?",
+            "purpose": "Quais cuidados devo ter ao usar logs com e-mail e IP para detectar fraude?",
+            "is_sensitive": false,
+            "has_consent": false
+          }
+        }
+      ]
+    }
+  ],
+  "cache_demo": {
+    "question": "Posso armazenar CPF do cliente para emissão de nota fiscal?",
+    "cache": {
+      "hit": true,
+      "type": "exact"
+    },
+    "latency_ms": 0.01
+  },
+  "cache_report": {
+    "exact_hits": 1,
+    "semantic_hits": 0,
+    "misses": 3,
+    "writes": 3,
+    "hit_rate": 0.25,
+    "ttl_seconds": 3600,
+    "semantic_threshold": 0.82
+  },
+  "cost_report": {
+    "total_calls": 3,
+    "cheap_calls": 1,
+    "premium_calls": 2,
+    "actual_cost_usd": 0.00255,
+    "baseline_all_premium_usd": 0.0036,
+    "estimated_saving_pct": 29.17
+  }
+}
